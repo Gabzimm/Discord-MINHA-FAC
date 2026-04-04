@@ -164,7 +164,7 @@ async def dar_cargo_visitante(member):
         return False
 
 async def enviar_mensagem_boas_vindas(member):
-    canal_nome = "🚨・pedir-set"
+    canal_nome = "📤・bem-vindo"
     canal = discord.utils.get(member.guild.text_channels, name=canal_nome)
     if not canal:
         try:
@@ -183,8 +183,8 @@ async def enviar_mensagem_boas_vindas(member):
         color=discord.Color.green()
     )
     embed.add_field(name="📌 PRIMEIRO PASSO", value=f"Por favor, vá até o canal **{canal_nome}** para fazer seu set!", inline=False)
-    embed.add_field(name="🎮 DICA", value="Lá você poderá escolher seus jogos e cargos!", inline=False)
-    embed.set_footer(text="Aproveite sua estadia! 🚀")
+    embed.add_field(name="🎮 DICA", value="Lá você poderá escolher quem te recrutou!", inline=False)
+    embed.set_footer(text="Espero que goste! 🚀")
     embed.set_thumbnail(url=member.display_avatar.url)
     try:
         await canal.send(embed=embed)
@@ -196,7 +196,7 @@ async def enviar_mensagem_boas_vindas(member):
 
 # ==================== CARREGAR MÓDULOS ====================
 async def carregar_modulos():
-    modules = ['modules.sets', 'modules.painel_rec', 'modules.hierarquia', 'modules.cargos']
+    modules = ['modules.sets', 'modules.painel_rec', 'modules.hierarquia', 'modules.cargos', 'modules.limpeza']
     print("\n📦 Carregando módulos:")
     for module in modules:
         try:
