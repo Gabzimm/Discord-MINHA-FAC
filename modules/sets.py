@@ -216,7 +216,7 @@ class SetForm(ui.Modal, title="📝 Pedido de Set"):
     
     recrutador = ui.TextInput(
         label="3. ID de quem te recrutou (OBRIGATÓRIO):",
-        placeholder="Ex: 9237",
+        placeholder="Ex: 19309",
         required=True,
         max_length=20
     )
@@ -441,11 +441,11 @@ class SetsCog(commands.Cog, name="Sets"):
         
         embed.add_field(
             name="🤝 Como encontrar ID do Recrutador?",
-            value="Procure no nickname da pessoa: `00| Torres | 9237`\nO número após o último '|' é o ID do FiveM",
+            value="Procure no nickname da pessoa: `01 | Rafael | 19309`\nO número após o último '|' é o ID do FiveM",
             inline=False
         )
         
-        embed.set_image(url="https://cdn.discordapp.com/attachments/1473746931003035801/1474722296920015000/image.png")
+        embed.set_image(url="")
         embed.set_footer(text="Sistema automático • WaveX")
         
         view = SetOpenView()
