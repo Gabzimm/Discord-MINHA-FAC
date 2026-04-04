@@ -445,7 +445,7 @@ class SetsCog(commands.Cog, name="Sets"):
             inline=False
         )
         
-        embed.set_image(url="")
+        embed.set_image(url="https://media.discordapp.net/attachments/1441849588620460225/1474167151387742230/Copia_de_Copia_de_Copia_de_Copia_de_banner.gif?ex=69d235e5&is=69d0e465&hm=ab7b4a462bc6816cba72481378c27aead64a339482a719cbc83e76a5c144a8fb&=")
         embed.set_footer(text="Sistema automático • WaveX")
         
         view = SetOpenView()
