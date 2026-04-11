@@ -1,0 +1,33 @@
+{
+    "guild_id_do_servidor": {
+        "staff_roles": [],
+        "boas_vindas": {
+            "enabled": true,
+            "canal_id": 1234567890,
+            "mensagem": "Olá {user_mention}, bem-vindo ao servidor!",
+            "cargo_automatico_id": null
+        },
+        "despedida": {
+            "enabled": false,
+            "canal_id": null,
+            "mensagem": "Até logo, {user_name}!"
+        },
+        "auto_nickname": {
+            "enabled": true,
+            "padrao": "{cargo_display} | {user_name} | {fivem_id}"
+        },
+        "sistema_sets": {
+            "enabled": true,
+            "canal_aprovacao_id": null
+        },
+        "sistema_hierarquia": {
+            "enabled": true
+        },
+        "sistema_limpeza": {
+            "enabled": true
+        },
+        "sistema_recrutamento": {
+            "enabled": true
+        }
+    }
+}
