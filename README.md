@@ -1,4 +1,6 @@
 colocar o main.py quando for religar:
+
+
 import os
 import sys
 import asyncio
